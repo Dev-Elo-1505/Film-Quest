@@ -4,6 +4,7 @@ interface Movie {
   id: number;
   poster_path: string;
   title: string;
+  release_date: string;
 }
 
 const Movie = () => {
@@ -22,15 +23,20 @@ const Movie = () => {
   }, []);
   console.log(movieList);
   return (
-    <section>
+    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      
       {movieList.map((movie) => (
-        <div key={movie.id} className="flex">
+        <div key={movie.id}>
           <div className="w-[250px] h-[300px]">
             <img
-            className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
             />
+            <div>
+              <h3>{movie.title}</h3>
+              <small>{movie.release_date}</small>
+            </div>
           </div>
         </div>
       ))}
