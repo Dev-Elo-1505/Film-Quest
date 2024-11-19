@@ -23,21 +23,22 @@ const Movie = () => {
   }, []);
   console.log(movieList);
   return (
-    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 place-items-center">
       
       {movieList.map((movie) => (
         <div key={movie.id}>
-          <div className="w-[250px] h-[300px]">
+          <div className="w-[100px] h-[100px]">
             <img
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
             />
-            <div>
+            
+          </div>
+          <div>
               <h3>{movie.title}</h3>
               <small>{movie.release_date}</small>
             </div>
-          </div>
         </div>
       ))}
     </section>

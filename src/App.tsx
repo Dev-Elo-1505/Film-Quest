@@ -5,7 +5,7 @@ function App() {
   return (
     <section>
      <Header />
-     <h2>Movies</h2>
+     <h2 className="text-xl p-5 font-bold text-[#1D1B31]">Movies</h2>
       <Movie />
     </section>
   );
