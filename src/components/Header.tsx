@@ -9,13 +9,13 @@ const Header = () => {
           Find Your Next <br></br>Favourite Film Instantly!
         </h2>
         <div className="mt-5 flex items-center justify-center gap-3 border bg-white p-2">
-          <MdMovie className="text-red-500 text-2xl" />
+          <MdMovie className="text-red-600 text-2xl" />
           <input
             className="w-full border-none bg-transparent focus:border-none focus:outline-none text-black font-normal"
             type="text"
             placeholder="E.g Vampire Diaries"
           />
-          <button className="bg-red-500 p-2">Find</button>
+          <button className="bg-red-600 p-2">Find</button>
         </div>
       </div>
     </header>

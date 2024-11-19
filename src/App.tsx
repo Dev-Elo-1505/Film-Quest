@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Movie from "./components/Movie";
 
@@ -6,6 +7,7 @@ function App() {
     <section>
      <Header />
       <Movie />
+      <Footer />
     </section>
   );
 }
