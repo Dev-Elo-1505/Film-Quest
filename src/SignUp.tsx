@@ -12,6 +12,7 @@ const handleCreateUser = async (e: React.FormEvent) => {
   e.preventDefault();
   try {
     await createUserWithEmailAndPassword(auth, email, password)
+    alert("User created successfully")
   } catch (error) {
     console.log(error);
     
