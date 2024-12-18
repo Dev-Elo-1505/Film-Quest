@@ -1,14 +1,18 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Movie from "./components/Movie";
+import SignUp from "./SignUp";
+import SignIn from "./SignIn";
+import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
-    <section>
-     <Header />
-      <Movie />
-      <Footer />
-    </section>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+      </Router>
   );
 }
 
