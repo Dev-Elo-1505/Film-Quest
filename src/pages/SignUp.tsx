@@ -26,8 +26,9 @@ const navigate = useNavigate();
   };
 
   return (
-    <section className="relative bg-hero h-screen bg-cover w-full flex items-center justify-center bg-center text-white">
+    <section className="relative bg-hero h-screen bg-cover w-full flex flex-col gap-5 items-center justify-center bg-center text-white">
       <div className="absolute bg-black opacity-50 inset-0"></div>
+      <h1 className="md:text-3xl z-10 font-bold text-red-500">F I L M Q U E S T</h1>
       <div className="z-10 relative bg-[#060202]/50 px-5 py-7 md:w-[400px] flex items-center justify-center flex-col rounded-md backdrop-blur-xl">
         <h2 className="text-2xl mb-5 font-bold">Sign Up</h2>
         <form onSubmit={handleCreateUser}>

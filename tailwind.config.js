@@ -10,7 +10,8 @@ export default {
         'hero': "url('./assets/hero.png')"
       },
       colors: {
-        'primary': '#1d1b31',
+        'deepBlue': '#032541',
+        'whitte': '#fffff7',
       }
     },
   },
