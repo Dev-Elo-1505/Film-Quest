@@ -22,6 +22,7 @@ const HomePage = () => {
     <section>
       <Header />
       <Hero />
+      <Movie />
         {/* 
         <Movie />
         <Footer /> */}
