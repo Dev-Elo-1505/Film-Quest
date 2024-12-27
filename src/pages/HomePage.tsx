@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Movie from "../components/Movie";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../config/firebase"
+import Hero from "../components/Hero";
 
 const HomePage = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const HomePage = () => {
   return (
     <section>
       <Header />
+      <Hero />
         {/* 
         <Movie />
         <Footer /> */}
