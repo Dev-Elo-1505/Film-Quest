@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import SearchBar from "./SearchBar";
 
 interface Movie {
   id: number;
@@ -46,7 +47,7 @@ const Hero: React.FC = () => {
     <div>
       {movie ? (
         <div
-          className="relative w-full h-screen bg-cover bg-center"
+          className="relative w-full h-screen bg-cover bg-center p-5 lg:px-10 lg:py-5"
           style={{
             backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.poster_path})`,
           }}
@@ -54,11 +55,12 @@ const Hero: React.FC = () => {
           {/* Overlay */}
           {/* <div className="absolute inset-0 bg-[#027fb530] bg-opacity-10"></div> */}
 
-          <div className="relative z-10 flex flex-col h-full p-5 text-center text-white space-y-4">
+          <div className="relative z-10 flex flex-col h-full p-5 text-center justify-center items-center text-white space-y-4">
             <h1 className="text-4xl font-bold md:text-6xl">Welcome.</h1>
             <p className="text-sm md:text-lg max-w-2xl font-bold">
               Find your Next Favorite Film Instantly!
             </p>
+            <SearchBar />
           </div>
         </div>
       ) : (
